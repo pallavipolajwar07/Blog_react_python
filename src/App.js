@@ -1,6 +1,5 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
-import Base from './components/Base';
 import {BrowserRouter,Routes,Route, Router} from 'react-router-dom'
 import Home from './pages/Home';
 import About from './pages/About';
@@ -11,10 +10,10 @@ function App() {
   return (
 <BrowserRouter>
 <Routes>
-<Route path="/" element={<Home/>}/>
-<Route path="/About" element={<About/>}/>
-<Route path="/Login" element={<Login/>}/>
-<Route path="/SignUp" element={<SignUp/>}/>
+<Route exact path="/" element={<Home/>}/>
+<Route exact path="/About" element={<About/>}/>
+<Route exact path="/Login" element={<Login/>}/>
+<Route exact path="/SignUp" element={<SignUp/>}/>
 </Routes>
 </BrowserRouter>
   );

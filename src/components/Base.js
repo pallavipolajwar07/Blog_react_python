@@ -1,13 +1,13 @@
-import Navv from "./Navv";
+import CustomNavbar from "./CustomNavbar";
 
 const Base=({title="Welcome to our website",children})=>{
     return(
-        <div className="container-fluid">
-            <Navv />
-            {<h1>This is header</h1>}
+        <>
+            <CustomNavbar />
+            {<h5>This is header</h5>}
             {children}
-            <h1>This is footer</h1>
-        </div>
+            <h5>This is footer</h5>
+        </>
     )
 }
 
