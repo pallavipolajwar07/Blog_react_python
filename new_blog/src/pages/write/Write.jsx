@@ -3,10 +3,11 @@ import "./write.css";
 const Write = () => {
     return (
     <div className="write">
+        <img src="https://images.pexels.com/photos/851213/pexels-photo-851213.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1260&amp;h=750&amp;dpr=1" alt="" className="writeImg" />
         <form className="writeForm">
         <div className="writeFormGroup">
             <label htmlFor="fileInput">
-            <i class="fa-solid fa-circle-plus"></i>
+            <i className="writeIcon fa-solid fa-plus"></i>
             </label>
         <input type="file" id="fileInput" style={{display:"none"}}/>
         <input type="text" placeholder="Title" className="writeInput" autoFocus={true}/>
